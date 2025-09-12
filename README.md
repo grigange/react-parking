@@ -14,6 +14,27 @@ A modern, production-ready template for building full-stack React applications u
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
 
+## Project Purpose
+
+This repository contains a simple React application built with React Router. It serves as a basic template for a full-stack React application, demonstrating server-side rendering, routing, and data loading.
+
+## Project Structure
+
+Here is an overview of the most important files and directories in this project:
+
+-   `app/`: This directory contains the main application code.
+    -   `root.tsx`: The root component of the application. It defines the main layout, including the HTML structure, and includes an error boundary to catch and handle errors.
+    -   `routes/`: This directory contains the application's routes. Each file in this directory corresponds to a specific route.
+        -   `home.tsx`: The component for the home page, located at the root path (`/`).
+    -   `welcome/`: This directory contains components that are used on the welcome page.
+        -   `welcome.tsx`: The main component for the welcome page, which displays a logo and a list of resources.
+        -   `test.tsx`: A simple test component used within the `Welcome` component.
+    -   `routes.ts`: This file exports the route configuration for the application. It uses file-based routing to automatically generate routes from the files in the `app/routes` directory.
+-   `public/`: This directory contains static assets that are served directly to the browser, such as `favicon.ico`.
+-   `vite.config.ts`: The configuration file for Vite, the build tool used in this project. It includes plugins for React Router, Tailwind CSS, and TypeScript paths.
+-   `package.json`: This file lists the project's dependencies, scripts for development and building, and other project metadata.
+-   `README.md`: This file, providing an overview of the project, setup instructions, and other relevant information.
+
 ## Getting Started
 
 ### Installation
