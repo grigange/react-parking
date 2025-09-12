@@ -2,7 +2,11 @@ import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 import Test from "./test";
 
-
+/**
+ * The main component for the welcome page. It displays the React Router logo
+ * and a list of helpful resources.
+ * @returns A React element that renders the welcome page.
+ */
 export function Welcome() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
@@ -49,6 +53,10 @@ export function Welcome() {
   );
 }
 
+/**
+ * An array of objects representing the resources to be displayed on the welcome page.
+ * Each object has a `href` for the link, `text` for the display text, and an `icon` component.
+ */
 const resources = [
   {
     href: "https://reactrouter.com/docs",
